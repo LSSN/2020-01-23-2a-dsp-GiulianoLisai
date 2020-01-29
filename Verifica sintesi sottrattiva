@@ -1,10 +1,17 @@
-NOME E COGNOME: Lisai Giuseppe Giuliano. CLASSE: 2A
 //Crea un file di faust in cui esponi, in forma di commento, i principi della sintesi sottrattiva. Realizza un esempio attraverso un filtraggio passa banda.
+
 import("stdfaust.lib");
-process= no.noise : fi.lowpass(2,2000);
+process= no.noise : fi.lowpass(2,2000); //GS - QUESTO NON È UN FILTRO PASSA BANDA
+
 //cutoff= vslider("cut-off [style:cnom]",1000,20,2000,1);
 //process = fi.lowpass(2,cutoff) : fi.highpass(2,cutoff);
 //la sintesi sottrattiva è un modello di sintesi sonora, nella quale una sorgente sonora ricca di armoniche, viene filtrata da un punto di vista spettrale "sottraendo" o modulando da essa bande di frequenze o singole parziali.
+
+//GS - WIKIPEDIA IN ITALIANO FA SCHIFO, È RICCO DI IMPRECISIONI, LA MODULAZIONE È UNA TECNICA DI 
+//GS - SINTESI A SE STANTE, NON HA PRINCIPI CONDIVISI CON LA SINTESI SOTTRATTIVA.
+//GS - SOTTRARRE, FILTRARE. TOGLIERE DA UN SUONO COMPLESSO PORZIONI DI SPETTRO ATTRAVERSO I FILTRI
+
 // la sintesi sottrattiva possiede degli strumenti, per esempio lo sprettoscopio e l'oscilloscopio.
 // l'oscilloscopio fa vedere il segnale nel dominio del tempo. nelle "x" abbiamo il tempo, nelle "y" l'ampiezza.
 // lo spettroscopio ci fa vedere ci fa vedere il segnale nel dominio del tempo.
+//GS - NO, FA VEDERE LE AMPIEZZE NEL DOMINIO DELLA FREQUENZA.
